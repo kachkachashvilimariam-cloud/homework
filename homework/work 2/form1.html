@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <h1>სასტუმროს ჯავშნისთვის</h1>
+    <form action="#" method="post">
+      <p>სტუმრის პირადი ინფორმაცია</p>
+      <label for="name">სახელი/გვარი</label>
+      <input type="text" required minlength="3" mid="name" />
+      <label for="gmail">მეილი</label>
+      <input type="email" required id="gmail" />
+      <label for="123">ტელეფონის ნომერი</label>
+      <input type="tel" required id="123" />
+      <p>დაჯავშნის დეტალები</p>
+      <label for="chek-in">შესვლის თარიღი</label>
+      <input type="date" required id="chek-in" />
+      <label for="chek-out">გასვლის თარიღი</label>
+      <input type="date" required id="chek-out" />
+      <label for="guest">სტუმრების რაოდენობა</label>
+      <input type="number" min="1" max="5" value="1" id="guest" />
+      
+      <label for="room_type">ოთახის ტიპი</label>
+      <select name="room-type" id="room_type" required>
+      <option value="" disabled selected></option>აირჩიეთ ოთახი </option>
+      <option value="standart">სტანდარტული (standart)</option>
+      <option value="deluxe">ლუქსი (deluxe)</option>
+      <option value="suite">აპარტამენტი (suite)</option>
+      </select>
+      <h4>კვება და დამატებითი სერვისები</h4>
+      <p>კვების ტიპი</p>
+      <label for="BB">მხოლოდ საუზმე</label>
+      <input type="radio" id="BB" name="meal_paln" value="bb">
+      <label for="HB">ორჯერადი კვება</label>
+      <input type="radio" id="HB" name="meal_paln" value="hb">
+      <label for="FB">სრული პანსიონი</label>
+      <input type="radio" id="FB" name="meal_paln" value="fb">
+      <p>დამატებითი სერვისები</p>
+      <label for="transfer">ტრანსფერი აეროპორტიდან</label>
+      <input type="checkbox" id="transfer" name="services">
+      <label for="SPA">SPA & Wellness</label>
+      <input type="checkbox" id="SPA" name="services">
+      <label for="parking">პარკინგი</label>
+      <input type="checkbox" id="parking" name="services"> 
+      <h3>დამატებითი კომენტარი და პირობები</h3>
+      <label for="special-requests">სპეციალური მოთხოვნები</label>
+      <textarea name="special" id="special-requests" maxlength="200" rows="4"></textarea>
+      <label for="rules">წესებზე თანხმობა</label>
+      <input type="checkbox" required id="rules">
+      <p><button type="submit">დაჯავშნა</button></p>
+     <p><button type="reset">გასუფთავება</button></p>
+    </form>
+  </body>
+</html>

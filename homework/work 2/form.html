@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <h1>შესავსები ფორმა</h1>
+    <form action="#" method="get">
+      <label for="name">სახელი/გვარი</label>
+      <input type="text" placeholder="მაგ:მახო სულაძე" id="name" />
+
+      <label for="age">ასაკი</label>
+      <input
+        type="number"
+        placeholder="შეიყვანე ასაკი"
+        id="age"
+        min="15"
+        max="50"
+        name="my_age"
+      />
+
+      <label for="123">პაროლი</label>
+      <input type="password" id="123" />
+
+      <label for="ss">ტელეფონი</label>
+      <input type="tel" id="ss" name="tel" />
+
+      <input type="file" name="upload" id="up" />
+      <input type="color" name="color" id="12" />
+      <input type="range" name="" id="" />
+      <button type="submit">გაგზავნა</button>
+    </form>
+  </body>
+</html>
