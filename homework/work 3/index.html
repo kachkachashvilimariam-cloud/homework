@@ -3,7 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travel Planner</title>
+    <style>
+      /* სათაურის ცენტრირება */
+      header {
+        text-align: center;
+      }
+      /* ფოტოს ცენტრირება */
+      article {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>მოგზაურობის დაგეგმვა</h1>
+    </header>
+    <main>
+      <article>
+        <img src="./image.html/travel.png" alt="Travel image" />
+      </article>
+
+      <form class="travel-form">
+        <!--ქალაქების ველები -->
+        <div class="form-group">
+          <label for="from">გაფრენა (საიდან)</label>
+          <input
+            type="text"
+            id="from"
+            name="from_where"
+            placeholder="ჩაწერეთ ქალაქი..."
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="to">ჩაფრენა (საით)</label>
+          <input
+            type="text"
+            id="to"
+            name="destination"
+            placeholder="ჩაწერეთ ქალაქი..."
+          />
+        </div>
+        <!--თარიღის ველები -->
+        <div class="date-picker-group">
+          <div class="date-field">
+            <label for="departure">გამგზავრება</label>
+            <input type="date" id="departure" name="go" />
+          </div>
+          <div class="date-divider"></div>
+          <div class="date-field">
+            <label for="return">დაბრუნება</label>
+            <input type="date" id="return" name="arrival" />
+          </div>
+          <!--მგზავრების ოდენობა -->
+          <div class="form-group">
+            <label for="passengers">მგზავრები</label>
+            <select name="number" id="passengers">
+              <option value="1">1 მგზავრი</option>
+              <option value="2">2 მგზავრი</option>
+              <option value="3">3 მგზავრი</option>
+              <option value="4">4 მგზავრი</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">ძებნა</button>
+      </form>
+    </main>
+  </body>
 </html>
