@@ -23,6 +23,11 @@ header {
   color: #333;
 }
 
+.logo img {
+  width: 300px;
+  height: auto;
+}
+
 .nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -72,7 +77,7 @@ header {
   background-color: #0056b3;
 }
 
-.cards-container {
+.card-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -85,7 +90,7 @@ header {
   flex: 1 1 250px;
   max-width: 300px;
   padding: 30px 20px 20px;
-  background-color: #ffffff;
+  background-color: #d9dad7;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   box-shadow: 0 4px 6px;
