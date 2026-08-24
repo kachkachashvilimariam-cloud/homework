@@ -48,3 +48,20 @@ const getTaxAmount = (salary) => {
 console.log(getTaxAmount(800));
 console.log(getTaxAmount(2000));
 console.log(getTaxAmount(4000));
+
+// დავალება 4 Function Expression (ფუნქციის გამოსახულება)
+const calculateDiscount = function (price, discauntPercent) {
+  return price - (price * discauntPercent) / 100;
+};
+console.log(calculateDiscount(100, 20));
+
+// დავალება 5 Function Declaration (ფუნქციის გამოცხადება)
+function createProduct(title, price, category = "ზოგადი") {
+  return `პროდუქტი: ${title}, ფასი: ${price} ლ, კატეგორია: ${category}`;
+}
+
+const item1 = createProduct("ლეპტოპი", 3500, "ტექნიკა");
+const item2 = createProduct("წიგნი", 20);
+
+console.log(item1);
+console.log(item2);
