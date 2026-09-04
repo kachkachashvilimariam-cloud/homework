@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ასინქრონული Javascript - დავალებები</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>ასინქრონული Javascript-ის დავალებები</h1>
+
+      <!-- დავალება 1: (Fetch + DOM) -->
+      <section class="task-section">
+        <h2>დავალება 1: პირველი 10 პოსტი (Fetch + DOM)</h2>
+        <div id="posts-container" class="posts-grid"></div>
+      </section>
+
+      <!--დავალება 2: (Error Handling)-->
+      <section class="task-section">
+        <h2>დავალება 2: მომხმარებლის ძებნა (Error Handling)</h2>
+        <div class="search-box">
+          <input
+            type="number"
+            id="user-id-input"
+            placeholder="ჩაწერეთ ID (მაგ: 1 ან 999)"
+            min="1"
+          />
+          <button id="search-btn">ძებნა</button>
+        </div>
+        <div id="user-result" class="result-box"></div>
+      </section>
+
+      <!-- დავალება 3: (Promise.all + POST) -->
+      <section class="task-section">
+        <h2>დავალება 3: (Promise.all + POST)</h2>
+        <button id="create-and-fetch-btn" class="action-btn">
+          შექმენი და წამოიღე
+        </button>
+        <p class="info-text">
+          შედეგი გამოჩნდება ბრაუზერის კონსოლში (Console-ში).
+        </p>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
